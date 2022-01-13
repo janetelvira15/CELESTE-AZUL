@@ -10,17 +10,204 @@
 }
 
 header {
-    background: linear-gradient(to right,#97aedf, #9d27a1);
-    
+   display:none
     
 }
 
-/*Sección jumbotron*/
-
-main {
+/*Sección jumbotrón*/
+.jumbotron {
     display: flex;
+    height: 100%;
+    align-items: center;
+    background: #dde3f0;
+    justify-content:space-around;
     flex-direction: column;
+    
+  /*  background: url('./img/tijeras_cepillos.jpg') no-repeat center center cover; */ 
 }
+
+.correo-jumbotron {
+    text-align: center;
+    background: #dde3f0;
+    color: linear-gradient(to right, #97aedf,#9d27a1);
+    
+}
+
+.img-jumbotron img {
+    
+    width: 100%;
+     
+ }
+ .text-jumbotron {
+     font-size: 2.1rem;
+     color: #9d27a1;
+     padding: 30px;
+     text-align: center;
+     
+ }
+ 
+ input {
+     border-radius: 10px;
+     width: 60%;
+     padding: 12px 20px;
+     margin: 15px 0;
+     border: none;
+ }
+ 
+ button {
+     border-radius: 15px;
+     padding: 12px 30px;
+     border: none;
+     color: white;
+     display: inline-block;
+     background: #9d27a1;
+     font-weight: 700;
+ }
+ 
+ .nombre_negocio {
+     text-align: center;
+     background: linear-gradient(to right, #97aedf,#9d27a1);
+     color: #dde3f0;
+     padding: 10px;
+     border-radius: 10px;
+     font-size: 2rem;
+     text-align: center;
+ }
+ 
+ 
+
+
+
+
+
+
+/*Seccion Servicios*/
+
+.Servicios {
+        
+        background: linear-gradient(to right,#97aedf, #9d27a1) /*rgba(83, 3, 94, 0.678);*/
+}
+
+.titulo-servicios {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.tarjeta-sevicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    margin: 10px 10px 0 10px;
+    width: 95%;
+    color: white;
+    text-align: center;
+} 
+
+.tarjeta-sevicio .titulo-tarjeta {
+    margin:10px;
+}
+.tarjeta-sevicio > img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+}
+.titulo-servicios,texto-servicios {
+    text-align: center;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    background-color: #dde3f0;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
+
+}
+
+.rs {
+    display: none;
+}
+
+.icon-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 5px 20px;
+
+}
+
+.icon-redes li img {
+    
+   width: 50px;
+   padding: 2px;
+   
+  
+ 
+}
+
+.footer-mapa {
+    padding: 7px;
+}
+
+.footer-tema {
+    padding: 7px;
+}
+
+/*media queries*/
+
+@media screen and (min-width: 700px) {
+
+    header {
+        display: block;
+        background: linear-gradient(to right,#97aedf, #9d27a1);
+        position: fixed;
+        width: 100%;
+        
+    }
+
+    .navbar-cambio-btn {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+       
+    }
+    .menu li {
+        padding: 10px;
+        margin: 5px;
+        font-size: 1    rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       
+    }
+
+    .menu li a {
+        padding: 10px;
+        margin: 5px;
+        font-size: 1    rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color:white;
+    }
+
+    .menu li a:hover {
+        background-color: #6d6eb1;
+        color:white;
+    }
+
+    /*Sección jumbotron*/
+
+
 
 .jumbotron {
     display: flex;
@@ -29,6 +216,7 @@ main {
     background: #dde3f0;
     justify-content:space-around;
     flex-direction: row-reverse;
+    
   /*  background: url('./img/tijeras_cepillos.jpg') no-repeat center center cover; */ 
 }
 
@@ -48,7 +236,7 @@ main {
 
 .img-jumbotron img {
     
-   width: 70%;
+   width: 67%;
     
 }
 .text-jumbotron {
@@ -85,86 +273,18 @@ button {
 }
 
 
+/*Sección servicios */
 
-/*Seccion Servicios*/
-
-.Servicios {
-        
-    background-color:rgba(83, 3, 94, 0.678);
-}
-
-.grupo-tarjeta-servicio {
-        
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 70px;
-}
-
-
-.icon-redes {
-    display: flex;
     
-}
-
-icon-redes {
-    height: 10%;
-    padding: 5px;
-}
-
-footer {
-    display: flex;
-    background-color: #dde3f0;
-    justify-content: space-evenly;
-    line-height: 1.5rem;
-
-}
-/*media queries*/
-
-@media screen and (min-width: 700px) {
-    .navbar-cambio-btn {
-        display: none;
-    }
-
-    .menu {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        
-       
-    }
-    .menu li {
-        padding: 10px;
-        margin: 5px;
-        font-size: 1    rem;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-       
-    }
-
-    .menu li a {
-        padding: 10px;
-        margin: 5px;
-        font-size: 1    rem;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color:white;
-    }
-
-    .menu li a:hover {
-        background-color: #6d6eb1;
-        color:white;
-    }
-
-    .Servicios {
-        
-        background: linear-gradient(to right,#97aedf, #9d27a1) /*rgba(83, 3, 94, 0.678);*/
-    }
-
     .titulo-servicios {
         padding: 50px;
         color: white;
         text-align: center;
+    }
+
+    .grupo-tarjeta-servicio {
+        display: flex;
+        padding-bottom: 30px;
     }
 
     .tarjeta-sevicio {
@@ -173,7 +293,7 @@ footer {
         align-items: center;
         flex-direction: column;
         background-color: transparent;
-        margin: 10px;
+        
         width: 30%;
         color: white;
     } 
@@ -191,6 +311,46 @@ footer {
         margin: auto;
     }
 
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #dde3f0;
+        
+        line-height: 1.5rem;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    
+    }
 
+    .rs {
+        display: block;
+    }
+    
+    .icon-redes {
+        display: flex;
+    
+    }
+    
+    .icon-redes li img {
+        
+       width: 25%;
+       padding: 3px;
+       align-items: center;
+     
+    }
+
+    .footer-mapa {
+        padding: 0px;
+    }
+    
+    .footer-tema {
+        padding: 0px;
+    }
+    
+
+ .referencia {
+     text-align: center;
+ }
     
 }
