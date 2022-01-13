@@ -109,14 +109,17 @@ button {
     
 }
 
-icon-redes > img {
-    height: 1rem;
-    scale: 20%;
+icon-redes {
+    height: 10%;
     padding: 5px;
 }
 
 footer {
-    background-color: rgb(115, 132, 182);
+    display: flex;
+    background-color: #dde3f0;
+    justify-content: space-evenly;
+    line-height: 1.5rem;
+
 }
 /*media queries*/
 
