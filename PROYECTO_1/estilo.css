@@ -1,0 +1,193 @@
+
+/*Reseteo de estilos*/
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: linear-gradient(to right,#97aedf, #9d27a1);
+    
+    
+}
+
+/*Sección jumbotron*/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.jumbotron {
+    display: flex;
+    height: 65vh;
+    align-items: center;
+    background: #dde3f0;
+    justify-content:space-around;
+    flex-direction: row-reverse;
+  /*  background: url('./img/tijeras_cepillos.jpg') no-repeat center center cover; */ 
+}
+
+
+
+.correo-jumbotron {
+    background: #dde3f0;
+    color: linear-gradient(to right, #97aedf,#9d27a1);
+    
+}
+
+.img-text {
+    background: linear-gradient(to right, #97aedf,#9d27a1);
+    width: 50%;
+    
+}
+
+.img-jumbotron img {
+    
+   width: 70%;
+    
+}
+.text-jumbotron {
+    font-size: 2.1rem;
+    color: #9d27a1;
+    padding-right: 30px;
+}
+
+input {
+    border-radius: 10px;
+    width: 60%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    border: none;
+}
+
+button {
+    border-radius: 15px;
+    padding: 12px 30px;
+    border: none;
+    color: white;
+    display: inline-block;
+    background: #9d27a1;
+    font-weight: 700;
+}
+
+.nombre_negocio {
+    background: linear-gradient(to right, #97aedf,#9d27a1);
+    color: #dde3f0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+/*Seccion Servicios*/
+
+.Servicios {
+        
+    background-color:rgba(83, 3, 94, 0.678);
+}
+
+.grupo-tarjeta-servicio {
+        
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+
+.icon-redes {
+    display: flex;
+    
+}
+
+icon-redes > img {
+    height: 1rem;
+    scale: 20%;
+    padding: 5px;
+}
+
+footer {
+    background-color: rgb(115, 132, 182);
+}
+/*media queries*/
+
+@media screen and (min-width: 700px) {
+    .navbar-cambio-btn {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+       
+    }
+    .menu li {
+        padding: 10px;
+        margin: 5px;
+        font-size: 1    rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       
+    }
+
+    .menu li a {
+        padding: 10px;
+        margin: 5px;
+        font-size: 1    rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color:white;
+    }
+
+    .menu li a:hover {
+        background-color: #6d6eb1;
+        color:white;
+    }
+
+    .Servicios {
+        
+        background: linear-gradient(to right,#97aedf, #9d27a1) /*rgba(83, 3, 94, 0.678);*/
+    }
+
+    .titulo-servicios {
+        padding: 50px;
+        color: white;
+        text-align: center;
+    }
+
+    .tarjeta-sevicio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: transparent;
+        margin: 10px;
+        width: 30%;
+        color: white;
+    } 
+
+    .tarjeta-sevicio .titulo-tarjeta {
+        margin:10px;
+    }
+    .tarjeta-sevicio > img {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 10px;
+        
+    }
+    .titulo-servicios,texto-servicios {
+        margin: auto;
+    }
+
+
+    
+}
