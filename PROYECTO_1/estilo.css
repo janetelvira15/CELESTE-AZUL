@@ -39,7 +39,7 @@ header {
      
  }
  .text-jumbotron {
-     font-size: 2.1rem;
+     font-size: 1.5rem;
      color: #9d27a1;
      padding: 30px;
      text-align: center;
@@ -120,13 +120,36 @@ header {
 }
 
 
+/*sección opiniones*/
+.opiniones {
+    background: #dde3f0;
+    height: 50vh;
+    font-size: small;
+    padding: 50px;
+}
 
+.titulo_opiniones {
+    padding: 10px;
+    text-align: center;
+    color: #9d27a1;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.contenedor-opiniones {
+    display: flex;
+    
+}
+
+.autor-opinion {
+    font-weight: 700 ;
+}
 
 
 
 footer {
     display: flex;
-    background-color: #dde3f0;
+    background:  linear-gradient(to right, #97aedf,#9d27a1);
     flex-wrap: wrap;
     line-height: 1.5rem;
 
@@ -163,7 +186,7 @@ footer {
 
 /*media queries*/
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
 
     header {
         display: block;
@@ -211,11 +234,12 @@ footer {
 
 .jumbotron {
     display: flex;
-    height: 65vh;
+    height: 95vh;
     align-items: center;
     background: #dde3f0;
     justify-content:space-around;
     flex-direction: row-reverse;
+    
     
   /*  background: url('./img/tijeras_cepillos.jpg') no-repeat center center cover; */ 
 }
@@ -225,7 +249,7 @@ footer {
 .correo-jumbotron {
     background: #dde3f0;
     color: linear-gradient(to right, #97aedf,#9d27a1);
-    
+    padding: 30px;
 }
 
 .img-text {
@@ -236,13 +260,15 @@ footer {
 
 .img-jumbotron img {
     
-   width: 67%;
+   width: 90%;
+   padding: 50px;
     
 }
 .text-jumbotron {
     font-size: 2.1rem;
     color: #9d27a1;
-    padding-right: 30px;
+    padding: 30px;
+    
 }
 
 input {
