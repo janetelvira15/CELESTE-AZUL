@@ -11,8 +11,11 @@
 
 header {
    display:none
+
     
 }
+
+
 
 /*Sección jumbotrón*/
 .jumbotron {
@@ -123,11 +126,14 @@ header {
 /*sección opiniones*/
 .opiniones {
     background: #dde3f0;
-    height: 50vh;
+    height: 80vh;
     font-size: small;
     padding: 50px;
 }
-
+ 
+.opinion {
+    padding: 10px;
+}
 .titulo_opiniones {
     padding: 10px;
     text-align: center;
@@ -138,6 +144,7 @@ header {
 
 .contenedor-opiniones {
     display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -192,6 +199,8 @@ footer {
         display: block;
         background: linear-gradient(to right,#97aedf, #9d27a1);
         position: fixed;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         
     }
@@ -348,7 +357,9 @@ button {
         padding-bottom: 30px;
     
     }
-
+ .opiniones {
+     height: 50vh;
+ }
     .rs {
         display: block;
     }
